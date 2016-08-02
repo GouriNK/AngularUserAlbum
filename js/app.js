@@ -2,6 +2,7 @@
 
 var app = angular.module('albumApp', ['ui.router']);
 
+/*router configuration for page navigation*/
 app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) { 
     $urlRouterProvider.otherwise('/users');
     $stateProvider
@@ -30,8 +31,5 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
                 userName:null
             }
        })
-       
-
-        
 }]);
 
