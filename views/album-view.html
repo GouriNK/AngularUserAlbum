@@ -1,0 +1,63 @@
+<div class="gradient-panel panel-info">
+    <div class="container" ng-if="currentAlbumId!='' && currentAlbumId!=null">
+        <button class="btn-default btn-sm btn pull-right" style="margin-top:50px;" ui-sref="album-main({userId: currentUserId, userName:currentUserName})">Back to albums list</button>
+        <div class="page-header">
+            <h1>Album : {{currentAlbumTitle}}</h1>
+        </div>
+        <div id="main_area">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="col-xs-12" id="slider">
+                        <div class="row">
+                            <div class="col-sm-12" id="carousel-bounding-box">
+                                <div class="carousel slide" id="myCarousel">
+                                    <div class="carousel-inner">
+                                        <div class="item" data-slide-number="{{$index}}" ng-repeat="image in currentImageArr" ng-class="{'active' : ($index==activeIndex)}">
+                                            <img ng-cloak src="{{image.url}}">
+                                        </div>
+                                        <a class="left carousel-control" role="button" ng-click=prevImage()>
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" role="button" ng-click=nextImage()>
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card card-outline-danger text-xs-center">
+                        <div class="card-block">
+                            <blockquote class="card-blockquote">
+                                <p>{{currentImageArr[activeIndex].title}}</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12" id="slider-thumbs">
+                    <ul class="hide-bullets">
+                        <li class="col-sm-1" ng-repeat="thumbnail in currentImageArr">
+                            <a class="thumbnail" id="carousel-selector-1" ng-click="setImage($index)">
+                            <img ng-cloak src="{{thumbnail.url}}"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" ng-if="currentAlbumId=='' || currentAlbumId==null">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <br>
+                <p><img src="https://cdn3.iconfinder.com/data/icons/tango-icon-library/48/camera-photo-128.png" alt=""></p>
+                <h2><i class="fa fa-exclamation-triangle" style="color:red"></i>
+                Oops!...No photos Found. </h2>
+                <p>Click <a ui-sref="users">here</a> to return to USERS</p>
+            </div>
+        </div>
+    </div>
+</div>
