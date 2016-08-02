@@ -1,0 +1,244 @@
+/*html {
+    background-color: #666666;
+    background-image: -moz-radial-gradient(center, circle cover, #666666 0%, #1a1a1a 100%);
+    background-image: -webkit-gradient(radial, center center, 0, center center, 100%, color-stop(0%, #666666), color-stop(100%, #1a1a1a));
+    background-image: -webkit-radial-gradient(center, circle cover, #666666 0%, #1a1a1a 100%);
+    background-image: -o-radial-gradient(center, circle cover, #666666 0%, #1a1a1a 100%);
+    background-image: -ms-radial-gradient(center, circle cover, #666666 0%, #1a1a1a 100%);
+    background-image: radial-gradient(circle at center, #666666 0%, #1a1a1a 100%);
+    -pie-background: linear-gradient(left, #1a1a1a, #666666, #1a1a1a);
+    background-color: #383838;
+    padding: 0;
+    margin: 0;
+    min-height: 200%;
+}*/
+/*html {
+    background-color: #036CBD;
+    background-image: -moz-radial-gradient(center, circle cover, #036CBD 0%, #022A6F 100%);
+    background-image: -webkit-gradient(radial, center center, 0, center center, 100%, color-stop(0%, #036CBD), color-stop(100%, #022A6F));
+    background-image: -webkit-radial-gradient(center, circle cover, #036CBD 0%, #022A6F 100%);
+    background-image: -o-radial-gradient(center, circle cover, #036CBD 0%, #022A6F 100%);
+    background-image: -ms-radial-gradient(center, circle cover, #036CBD 0%, #022A6F 100%);
+    background-image: radial-gradient(circle at center, #036CBD 0%, #022A6F 100%);
+    -pie-background: linear-gradient(left, #022A6F, #036CBD, #022A6F);
+    background-color: #383838;
+    padding: 0;
+    margin: 0;
+    min-height: 200%;
+}*/
+html {
+    background-color: #ffffff;
+    background-image: -moz-radial-gradient(center, circle cover, #ffffff 0%, rgb(136, 172, 217) 100%);
+    background-image: -webkit-gradient(radial, center center, 0, center center, 100%, color-stop(0%, #ffffff), color-stop(100%, rgb(136, 172, 217)));
+    background-image: -webkit-radial-gradient(center, circle cover, #ffffff 0%, rgb(136, 172, 217) 100%);
+    background-image: -o-radial-gradient(center, circle cover, #ffffff 0%, rgb(136, 172, 217) 100%);
+    background-image: -ms-radial-gradient(center, circle cover, #ffffff 0%, rgb(136, 172, 217) 100%);
+    background-image: radial-gradient(circle at center, #ffffff 0%, rgb(136, 172, 217) 100%);
+    -pie-background: linear-gradient(left, rgb(136, 172, 217), #ffffff, rgb(136, 172, 217));
+    background-color: #383838;
+    padding: 0;
+    margin: 0;
+    min-height: 200%;
+}
+body{
+  background-color: initial;
+ 
+}
+.m-top-60{
+  margin-top:60px !important;
+}
+.m-top-20{
+  margin-top:20px !important;
+}
+.m-left-20{
+  margin-left:20px !important;
+}
+.m-right-20{
+  margin-right:20px !important;
+}
+.nav > li.active {
+    text-decoration: none;
+    background-color: #eee;
+}
+a{
+  display: inline-block;
+}
+.cover-pic .thumbnail{
+  height:200px;
+  width:242px;
+  background-color: transparent; 
+  /*border: 5px solid #ddd;
+  border-radius: 0px;*/
+  
+  
+}
+.cover-pic .thumbnail img{
+  /*height:181px;
+  width:242px;*/
+ /* height:85px;
+  width:102px;*/
+}
+.cover-pic {
+  position: relative;
+}
+.cover-pic:before,
+.cover-pic:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  background: #ededed;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+}
+.cover-pic:before {
+  z-index: 2;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.cover-pic:after {
+  z-index: 1;
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+.cover-pic img {
+  position: relative;
+  z-index: 3;
+  /*width: 176px;*/
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  background: #ededed;
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+}
+.cover-pic .thumbnail label {
+  margin-top: 10px;
+  text-align: center;
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.thumbnail{
+  border:none!important;
+}
+.thumbnail > img, .thumbnail a > img {
+  margin:0px!important;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+/*HEADER start*/
+.header{
+    z-index: 500;
+    height: 85px;
+    width: 100%;
+    /*background-color: #284c79;*/
+    background-color: #65429C;
+    color: rgb(136, 172, 217);
+}
+.header ul{
+    margin: 0;
+    padding: 0;
+}
+.header li{
+    width: 100px;
+    height: 85px;
+    /*background-color: rgba(52, 73, 94,1.0);*/
+    background-color: rgb(61, 39, 97);
+    padding: 20px 0 0 0px;
+    text-align: center;
+    float: right;
+    list-style: none;
+    margin-left: 1px ;
+    
+}
+.header li a{
+    font-family:cursive;
+    text-decoration: underline;
+    color: rgb(136, 172, 217);
+}
+.header li a:hover{
+    font-size: 12px;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
+    color: ghostwhite;
+}
+.header-placeholder{
+    margin: 0 0 0 0;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+}
+.fixed .header-inner{
+    padding: 0 20px;
+}
+.fixed .header-inner-most{
+    max-width:1160px;
+    margin: 0 auto;
+     background-color: #284c79;
+}
+#right-content{
+    height: 600px;
+}
+
+/*HEADER end*/
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, .p{
+  color:#022A6F;
+}
+b.ng-binding{
+  color:initial!important;
+}
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cursor-pointer{
+  cursor:pointer;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
