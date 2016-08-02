@@ -8,7 +8,7 @@ app.service('AlbumServices', function($http, $filter) {
         },
         'URL' : {
         	'GET_ALL_USERS' : "https://jsonplaceholder.typicode.com/users",
-        	'GET_ALBUMS_FOR_USER' : "http://jsonplaceholder.typicode.com/albums?userId=",
+        	'GET_ALBUMS_FOR_USER' : "https://jsonplaceholder.typicode.com/albums?userId=",
         	'GET_PHOTOS_FOR_ALBUM' :"https://jsonplaceholder.typicode.com/photos?albumId="
 		},
 		'DEFAULT_ALBUM_START_INDEX' :0
