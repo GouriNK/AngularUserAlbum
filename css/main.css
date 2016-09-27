@@ -238,4 +238,6 @@ b.ng-binding{
 .thumbnail:hover .caption {
     top:0%;
 }
-    
+.m-right-0{
+	margin-right:0px!important;
+    }
